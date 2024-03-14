@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.calculator {
+    width: 350px;
+    background-color: #333;
+    padding: 3rem 2rem;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5),
+                -15px -15px 15px rgba(0, 0, 0, 0.2);
+}
+.calculator .buttons {
+    display: grid;
+    position: relative;
+    width: 100%;
+}
+.calculator .buttons #display {
+    grid-column: span 4;
+    width: 300px;
+    height: 70px;
+    overflow: hidden;
+    background: #89c5cc;
+    border-radius: 10px;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    user-select: none;
+    -webkit-box-shadow: inset 10px 10px 5px -4px rgba(173,152,173,1);
+    -moz-box-shadow: inset 10px 10px 5px -4px rgba(173,152,173,1);
+    box-shadow: inset 10px 10px 5px -4px rgba(173,152,173,1);
+}
+.calculator .buttons span {
+    background-color: rgba(255, 255, 255, 0.37);
+    padding: 1rem;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+                -5px -5px 5px rgba(0, 0, 0, 0.2);
+}
+.calculator .buttons span:active {
+    box-shadow: inset 5px 10px rgba(0, 0, 0, 0.5),
+                inset -5px 5px rgba(0, 0, 0, 0.2);
+}
+.calculator .buttons #clear {
+    grid-column: span 2;
+    background-color: #e67e22;
+}
+.calculator .buttons #plus {
+    grid-row: span 2;
+    background-color: #d35400;
+}
+.calculator .buttons #equal {
+    background-color: #8e44ad;
+}
